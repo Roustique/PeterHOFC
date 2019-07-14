@@ -2,6 +2,8 @@
 # -*- coding: utf-8 -*-
 
 from student import Student_Player
+import serialize as s
+
 Player = Student_Player(
     firstname = "Юзернейм",
     lastname = "Юзернеймов",
@@ -12,3 +14,5 @@ Player = Student_Player(
     hunger = 0,
     interest = 0,
     karma = 0)
+
+print(s.dump(Player))

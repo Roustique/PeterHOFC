@@ -1,12 +1,19 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import yaml
+from entity import Entity
+from serialize import SerializableEntity
 
 
-class Student_Player():
-    yaml_tag = "!Student"
-    def __init__(self, firstname, lastname, health, mana, money, fatigue, hunger, interest, karma):
+class Student_Player(SerializableEntity):
+    """
+    real student
+    """
+
+    yaml_tag = u'!Student'
+
+    def __init__(self, firstname, lastname, health, mana, money, fatigue,
+                 hunger, interest, karma, **kwargs):
         self.firstname = firstname
         self.lastname = lastname
         self.health = health
@@ -18,7 +25,15 @@ class Student_Player():
         self.karma = karma
 
 
-class Student_NPC():
+class Student_NPC(Entity):
+    """
+    doppelganger of a student,
+    therefore can't be serialized
+    and has to be simulated
+
+    however, some cameos may subclass this class
+    """
+
     def __init__(self, firstname, lastname, relation, grade):
         self.firstname = firstname
         self.lastname = lastname
