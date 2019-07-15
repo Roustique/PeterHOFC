@@ -1,0 +1,74 @@
+---
+Karpov:
+    !Lecturer
+    name: Дмитрий Валерьевич
+    surname: Карпов
+    speed: 10
+    aggressivness: 2
+    clarity: 3
+    responsibility: 8
+    knowledge: 10
+Gromov:
+    !Lecturer
+    name: ~
+    surname: Громов
+    speed: 8
+    aggressivness: 0
+    clarity: 6
+    responsibility: 10
+    knowledge: 10
+PA:
+    !Lecturer
+    name: Пётр Александрович
+    surname: Тараканов
+    speed: 6
+    aggressivness: 2
+    clarity: 10
+    responsibility: 9
+    knowledge: 10
+Shney:
+    !Lecturer
+    name: Александр Борисович
+    surname: Шнейвайс
+    speed: 2
+    aggressivness: 0
+    clarity: 7
+    responsibility: 8
+    knowledge: 6
+Jesus:
+    !Lecturer
+    name: Андрей Александрович
+    surname: Солынин
+    speed: 4
+    aggressivness: 5
+    clarity: 4
+    responsibility: 3
+    knowledge: 9
+Resh:
+    !Lecturer
+    name: Владимир Петрович
+    surname: Решетников
+    speed: 5
+    aggressivness: 7 # why?
+    clarity: 8
+    responsibility: 8 # why?
+    knowledge: 8 # мне кажется он хорошо разбирается
+Savchenko:
+    !Lecturer
+    name: Сергей Сергеевич
+    surname: Савченко
+    speed: 6 
+    aggressivness: 0 
+    clarity: 8
+    responsibility: 8 
+    knowledge: 8 
+Nikiforov:
+    !Lecturer
+    name: Игорь Иванович
+    surname: Никифоров
+    speed: 7 
+    aggressivness: 4
+    clarity: 8
+    responsibility: 10
+    knowledge: 8
+...
