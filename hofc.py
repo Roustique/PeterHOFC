@@ -4,6 +4,8 @@
 from student import Student_Player
 import serialize as s
 
+from lecturers import Karpov
+
 Player = Student_Player(
     firstname = "Юзернейм",
     lastname = "Юзернеймов",
@@ -16,3 +18,6 @@ Player = Student_Player(
     karma = 0)
 
 print(s.dump(Player))
+
+
+print(Karpov.name)

@@ -3,5 +3,5 @@
 
 import serialize as s
 
-lrs = s.load(open('../data/lecturers.yml'))
+lrs = s.load(open('data/lecturers.yml'))
 globals().update(lrs)
